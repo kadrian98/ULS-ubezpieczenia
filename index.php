@@ -14,8 +14,8 @@
 							<div class="col-lg-7">
 								<div class="text">
 									<h1>Twoje <span>bezpieczeństwo</span>,nasza misja. <span>Ubezpieczenia</span> na każdą </span>potrzebę.</h1>									<div class="button">
-										<a href="#" class="btn">Wyliczenie składki OC!</a>
-										<a href="#" class="btn primary">Skontaktuj się!</a>
+										<a href="<?php echo site_url('/przygotowanie-oc'); ?>" class="btn">Wyliczenie składki OC!</a>
+										<a href="<?php echo site_url('/kontakt'); ?>" class="btn primary">Skontaktuj się!</a>
 									</div>
 								</div>
 							</div>
@@ -93,7 +93,7 @@
 					<div class="col-lg-12">
 						<div class="section-title">
 							<h2>Szybki i Prosty Formularz Online</h2>
-							<a href="<?php echo get_home_url();?>"><img src="<?php echo get_theme_file_uri('/img/section-img.png') ?>" alt="uls-background"></a>
+							<i style="font-size:52px;color:#c9a2a3;" class="icofont-stylish-down"></i>
 							<p>Wypełnij, wyślij, ciesz się ochroną. Proste kroki, szybka odpowiedź.</p>
 						</div>
 					</div>
@@ -103,7 +103,7 @@
 						<!-- Start Single features -->
 						<div class="single-features">
 							<div class="signle-icon">
-								<i class="icofont icofont-ambulance-cross"></i>
+							<i class="icofont-phone"></i>
 							</div>
 							<h3>Rozpocznij Kontakt</h3>
 							<p>Nawiąż z nami kontakt online lub telefonicznie, zacznij proces ubezpieczenia</p>
@@ -114,7 +114,7 @@
 						<!-- Start Single features -->
 						<div class="single-features">
 							<div class="signle-icon">
-								<i class="icofont icofont-medical-sign-alt"></i>
+							<i class="icofont-file-document"></i>
 							</div>
 							<h3>Formularz i Dokumenty</h3>
 							<p>Wypełnij nasz prosty formularz i zgromadź potrzebne dokumenty bez trudu.</p>
@@ -125,7 +125,7 @@
 						<!-- Start Single features -->
 						<div class="single-features last">
 							<div class="signle-icon">
-								<i class="icofont icofont-stethoscope"></i>
+							<i class="icofont-hospital"></i>
 							</div>
 							<h3>Twoje Ubezpieczenie</h3>
 							<p>Ciesz się pełnym spokojem i ochroną z naszym kompleksowym ubezpieczeniem.</p>

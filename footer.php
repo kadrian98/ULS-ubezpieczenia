@@ -6,7 +6,7 @@
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-12">
 							<div class="copyright-content">
-								<p>© Prawa Autorskie 2024 | Wszelkie prawa zastrzeżone przez <a href="https://github.com/kadrian98" target="_blank">Adrian Kaczmarek</a> </p>
+								<p>© Prawa Autorskie <?php echo date("Y"); ?> | Wszelkie prawa zastrzeżone przez <a href="https://github.com/kadrian98" target="_blank">Adrian Kaczmarek</a> </p>
 							</div>
 						</div>
 					</div>

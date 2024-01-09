@@ -574,10 +574,11 @@ body{
 	margin: 0;
 	padding: 0;
 	line-height: 42px;
+	text-shadow: 1px 0px 3px rgba(0, 0, 0, 1);
 }
 .slider .single-slider h1 span{
 	color:#c9a2a3;
-	text-shadow: 1px -3px 2px rgba(125, 106, 106, 1);
+	text-shadow: 1px 0px 3px rgba(125, 106, 106, 1);
 }
 .slider .single-slider p {
 	color: #2C2D3F;
@@ -1006,7 +1007,7 @@ body{
 }
 .services .single-service h4 a{
 	color:#2C2D3F;
-	font-size:20px;
+	font-size:15px;
 	font-weight:600;
 }
 .services .single-service h4 a:hover{
@@ -1681,7 +1682,7 @@ body{
 }
 .contact-us .contact-us-form h2 {
 	position: relative;
-	font-size: 32px;
+	font-size: 25px;
 	color: #333;
 	font-weight: 600;
 	line-height: 27px;
@@ -2180,3 +2181,45 @@ body{
 /*=========================
 	End Footer CSS
 ===========================*/
+
+.table-container {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+	margin-bottom: 0;
+  }
+  .table-container th,
+  .table-container td {
+    text-align: left;
+    padding: 8px;
+    border-top: 1px solid #ddd;
+  }
+  .table-container th {
+    background-color: #f2f2f2;
+  }
+  .download-link {
+    text-decoration: none;
+    color: #0000EE; /* Podstawowy kolor linku */
+    text-align: left;
+    display: block;
+  }
+  .download-icon {
+    display: inline-block;
+    background-image: url('download-icon.png'); /* Podmień na URL ikony */
+    width: 24px; /* Dostosuj do wymiarów ikony */
+    height: 24px; /* Dostosuj do wymiarów ikony */
+    background-size: cover;
+  }
+  .header-pobierz{
+	text-align: center;
+  }
+
+  .input-p{
+	margin: 0!important;
+	padding: 0 20px!important;
+	text-align: center!important;
+  }
+
+  .signle-icon i{
+	font-size: 25px;
+  }

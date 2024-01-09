@@ -42,7 +42,7 @@
 							<div class="col-lg-3 col-md-3 col-12">
 								<!-- Start Logo -->
 								<div class="logo">
-									<a href="index.html"><img src="<?php echo get_theme_file_uri('/img/logo-uls.png') ?>" alt="#"></a>
+									<a href="<?php echo get_home_url();?>"><img src="<?php echo get_theme_file_uri('/img/logo-uls.png') ?>" alt="#"></a>
 								</div>
 								<!-- End Logo -->
 								<!-- Mobile Nav -->
@@ -54,10 +54,10 @@
 								<div class="main-menu">
 									<nav class="navigation">
 										<ul class="nav menu">
-											<li><a href="#">Strona główna</a></li>
-											<li><a href="#">Oferta</a></li>
-											<li><a href="#">Przygotowanie OC</a></li>
-											<li><a href="#">Do pobrania</a></li>
+											<li><a href="<?php echo get_home_url();?>">Strona główna</a></li>
+											<li><a href="<?php echo site_url('/oferta'); ?>">Oferta</a></li>
+											<li><a href="<?php echo site_url('/przygotowanie-oc'); ?>">Przygotowanie OC</a></li>
+											<li><a href="<?php echo site_url('/do-pobrania'); ?>">Do pobrania</a></li>
 											<li><a href="<?php echo site_url('/kontakt'); ?>">Kontakt</a></li>											
 										</ul>
 									</nav>
@@ -71,3 +71,25 @@
 			<!--/ End Header Inner -->
 		</header>
 		<!-- End Header Area -->
+
+<?php if (!is_front_page()) {
+    // Pobierz tytuł bieżącej strony
+    $pageTitle = get_the_title();
+	$breadcrumbs = custom_breadcrumbs();
+
+    echo '<div class="breadcrumbs overlay">
+            <div class="container">
+                <div class="bread-inner">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>' . $pageTitle . '</h2>
+                            <ul class="bread-list">
+                                <li><a href="index.html">' . $breadcrumbs . '</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>';
+	}
+?>

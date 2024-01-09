@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name: kontakt
+Template Name: insurance-calculate
 */
 
 get_header(); 
@@ -10,7 +10,7 @@ get_header();
 				
 		<!-- Start Contact Us -->
 		<section class="contact-us section">
-			<div class="container">
+			<div class="container w-50">
 				<div class="inner">
 					<div class="row"> 
 						<!-- <div class="col-lg-6">
@@ -20,17 +20,17 @@ get_header();
 						</div> -->
 						<div class="col-lg-12">
 							<div class="contact-us-form">
-								<h2>Skontaktuj się z nami!</h2>
-								<p>Jeśli masz jakiekolwiek pytania, śmiało skontaktuj się z nami.</p>
+								<h2>Obliczanie składki OC</h2>
+								<p>Proszę wypełnić i wysłać formularz, aby obliczyć składkę ubezpieczenia i otrzymać odpowiedź e-mailem.</p>
 								<!-- Form -->
 								<form class="form" method="post" action="mail/mail.php">
 									<div class="row">
-										<div class="col-lg-6">
+										<div class="col-lg-12">
 											<div class="form-group">
 												<input type="text" name="name" placeholder="Imię i Nazwisko" required="">
 											</div>
 										</div>
-										<div class="col-lg-6">
+										<div class="col-lg-12">
 											<div class="form-group">
 												<input type="email" name="email" placeholder="Email" required="">
 											</div>
@@ -40,9 +40,25 @@ get_header();
 												<input type="text" name="phone" placeholder="Telefon" required="">
 											</div>
 										</div>
-										<div class="col-lg-12">
+										<h2>Dane Pojazdu</h2>
+                                        <div class="col-lg-12">
 											<div class="form-group">
-												<textarea name="message" placeholder="Wiadomość" required=""></textarea>
+                                            <p class="input-p">Numer rejestracyjny pojazdu (wpisz BRAK, jeśli pojazd nie został jeszcze zarejestrowany w Polsce):</p>
+												<input type="text" name="phone" placeholder="ZS XXXXX" required="">
+											</div>
+										</div>
+                                        <h2>Dane Właściciela/właścicieli pojazdu</h2>
+                                        <div class="col-lg-12">
+											<div class="form-group">
+                                            <p class="input-p">Imię i nazwisko właściciela:</p>
+												<input type="text" name="phone" placeholder="Imię i Nazwisko" required="">
+											</div>
+										</div>
+                                        <h2>Informacje ogólne</h2>
+                                        <div class="col-lg-12">
+											<div class="form-group">
+                                            <p class="input-p">Data rozpoczęcia ochrony:</p>
+												<input type="text" name="phone" required="">
 											</div>
 										</div>
 										<div class="col-lg-12 d-flex justify-content-center">
@@ -59,44 +75,7 @@ get_header();
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="contact-info">
-					<div class="row">
-						<!-- single-info -->
-						<div class="col-lg-4 col-12 ">
-							<div class="single-info">
-								<i class="icofont icofont-ui-call"></i>
-								<div class="content">
-									<h3>+(000) 1234 56789</h3>
-									<p>info@company.com</p>
-								</div>
-							</div>
-						</div>
-						<!--/End single-info -->
-						<!-- single-info -->
-						<div class="col-lg-4 col-12 ">
-							<div class="single-info">
-								<i class="icofont-google-map"></i>
-								<div class="content">
-									<h3>2 Fir e Brigade Road</h3>
-									<p>Chittagonj, Lakshmipur</p>
-								</div>
-							</div>
-						</div>
-						<!--/End single-info -->
-						<!-- single-info -->
-						<div class="col-lg-4 col-12 ">
-							<div class="single-info">
-								<i class="icofont icofont-wall-clock"></i>
-								<div class="content">
-									<h3>Mon - Sat: 8am - 5pm</h3>
-									<p>Sunday Closed</p>
-								</div>
-							</div>
-						</div>
-						<!--/End single-info -->
-					</div>
-				</div>
+				</div>				
 			</div>
 		</section>
 		<!--/ End Contact Us -->

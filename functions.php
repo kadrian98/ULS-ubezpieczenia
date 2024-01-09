@@ -36,6 +36,27 @@ function uls_style() {
   
 add_action('wp_enqueue_scripts','uls_style');
 
+function add_files() {
+
+  register_post_type('dokumenty', array(
+    'show_in_rest' => true,
+    'supports' => array('title', 'thumbnail'),
+    'public' => true,
+    'labels' => array(
+      'name' => 'Dokumenty',
+      'add_new_item' => 'Add New Dokument',
+      'edit_item' => 'Edit Dokument',
+      'all_items' => 'All Dokumenty',
+      'singular_name' => 'dokumenty',
+    ),
+    'menu_icon' => 'dashicons-open-folder'
+  ));
+
+
+}
+
+add_action('init', 'add_files');
+
 
 function features() {
   add_theme_support('title-tag');
@@ -43,6 +64,37 @@ function features() {
 }
 
 add_action('after_setup_theme', 'features');
+
+
+function custom_breadcrumbs() {
+  $output = ''; // Inicjalizacja pustego stringu
+  $arrow = '<i class="icofont-long-arrow-right"></i>';
+
+  // Budowanie breadcrumb
+  $output .= '<a href="'.home_url().'">Strona główna</a>';
+
+  if (is_category() || is_single()) {
+      $output .= $arrow;
+      $output .= get_the_category_list(', ');
+  } elseif (is_single()) {
+      if (have_posts()) : while (have_posts()) : the_post();
+          $output .= $arrow;
+          $output .= get_the_title();
+      endwhile; endif;
+  } elseif (is_page()) {
+      $output .= $arrow;
+      $output .= get_the_title();
+  } elseif (is_search()) {
+      $output .= " -> Wyniki wyszukiwania dla '" . get_search_query() . "'";
+  } elseif (is_404()) {
+      $output .= ' <i class="icofont-arrow-right"></i> 404 Not Found';
+  }
+
+  return $output; // Zwróć skumulowaną zawartość
+}
+
+
+
 
 
 ?>
