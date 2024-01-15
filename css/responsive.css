@@ -457,14 +457,14 @@ Version:	1.1
 	margin:0;
 }
 .slicknav_nav li:hover a{
-	color:#1A76D1;
+	color:var(--main-color);
 }
 .slicknav_nav li .dropdown li a{
 	color:#2C2D3F;
 	background:transparent;
 }
 .slicknav_nav li .dropdown li a:hover{
-	color:#1A76D1;
+	color:var(--main-color);
 }
 .slicknav_nav li .slicknav_item{
 	background:transparent;
@@ -476,15 +476,15 @@ Version:	1.1
 	font-weight:400;
 }
 .slicknav_menu .slicknav_icon-bar {
-	background-color: #1A76D1;
+	background-color: var(--main-color);
 	box-shadow: none;
 	text-shadow: none;
 }
 .slicknav_nav .slicknav_arrow{
-	color:#2C2D3F;
+	color:var(--main-color);
 }
 .slicknav_nav li:hover .slicknav_arrow{
-	color:#1A76D1;
+	color:var(--main-color);
 }
 .slicknav_menu .slicknav_icon-bar {
 	display: block;
@@ -902,7 +902,7 @@ Version:	1.1
 	height: 300px;
 }
 .contact-us .contact-us-form h2 {
-	font-size: 25px;
+	font-size: 15px;
 }
 .contact-us .single-info {
 	margin: 10px 0;
@@ -1118,7 +1118,7 @@ Version:	1.1
 .Feautes .single-features .signle-icon i {
 	font-size: 42px;
 	left: 50%;
-	margin-left: -40px;
+	margin:auto;
 	height:80px;
 	width: 80px;
 	line-height: 80px;
@@ -1133,7 +1133,6 @@ Version:	1.1
 	margin: 15px 0;
 }
 .Feautes .single-features h3 {
-	padding-top: 105px;
 	font-size: 20px;
 }
 .fun-facts.section{

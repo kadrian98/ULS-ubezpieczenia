@@ -683,12 +683,17 @@ pre code {
     .container {
         max-width: 720px
     }
+    .center-logo-class{
+        display: flex;
+        align-items: center;
+    }
 }
 
 @media (min-width:992px) {
     .container {
         max-width: 960px
     }
+
 }
 
 @media (min-width:1200px) {

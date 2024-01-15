@@ -31,25 +31,31 @@
         <!-- End Preloader -->
 		
 		
-	
-		<!-- Header Area -->
 		<header class="header" >
 			<!-- Header Inner -->
 			<div class="header-inner">
 				<div class="container">
 					<div class="inner">
-						<div class="row-remade">
-							<div class="col-lg-3 col-md-3 col-12">
+						<div class="row justify-content-between">
+							<div class="col-lg-3 col-md-3 col-12 center-logo-class">
 								<!-- Start Logo -->
 								<div class="logo">
 									<a href="<?php echo get_home_url();?>"><img src="<?php echo get_theme_file_uri('/img/logo-uls.png') ?>" alt="#"></a>
 								</div>
 								<!-- End Logo -->
 								<!-- Mobile Nav -->
-								<div class="mobile-nav"></div>
+								<div class="mobile-nav">
+									<div class="slicknav_menu"><a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;"><span class="slicknav_menutxt"></span><span class="slicknav_icon slicknav_no-text"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a><ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu">
+									<li><a href="<?php echo get_home_url();?>">Strona główna</a></li>
+											<li><a href="<?php echo site_url('/oferta'); ?>">Oferta</a></li>
+											<li><a href="<?php echo site_url('/przygotowanie-oc'); ?>">Przygotowanie OC</a></li>
+											<li><a href="<?php echo site_url('/do-pobrania'); ?>">Do pobrania</a></li>
+											<li><a href="<?php echo site_url('/kontakt'); ?>">Kontakt</a></li>	
+										</ul></div>
+								</div>
 								<!-- End Mobile Nav -->
 							</div>
-							<div class="col-lg-7 col-md-9 col-12">
+							<div class="col-lg-9 col-md-9 col-12">
 								<!-- Main Menu -->
 								<div class="main-menu">
 									<nav class="navigation">

@@ -15,7 +15,7 @@ get_header();
 					<div class="col-lg-12">
 						<div class="section-title">
 							<h2>Poznaj różnorodność oferowanych przez nas ubezpieczeń.</h2>
-							<i style="font-size:52px;color:#c9a2a3;" class="icofont-stylish-down"></i>
+							<i style="font-size:52px;color:#000068;" class="icofont-stylish-down"></i>
 							<p>Zapraszamy do wyboru ubezpieczenia dopasowanego do Twoich potrzeb.</p>
 						</div>
 					</div>

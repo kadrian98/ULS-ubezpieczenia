@@ -16,7 +16,8 @@
 		</footer>
 		<!--/ End Footer Area -->
 
-        <?php wp_footer(); ?>
-
+        
+		<a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647;"><span><i class="fa fa-angle-up"></i></span></a>
+		<?php wp_footer(); ?>
     </body>
 </html>
