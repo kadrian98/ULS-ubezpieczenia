@@ -2,7 +2,6 @@ var $ = jQuery;
 $(document).ready(function () {
     $("#sendingForm, #calculateInsurance").submit(function (event) {
         event.preventDefault();
-
         // var isChecked = $("#myCheckbox").is(":checked");
         // if (!isChecked) {
         //     alert("Musisz zaznaczyć checkbox, aby kontynuować.");
@@ -10,7 +9,7 @@ $(document).ready(function () {
         // }
 
         // Dodajemy napis "Processing..."
-        $("#sendingForm").after('<div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>');
+        $("#sendingForm, #calculateInsurance").after('<div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>');
 
         var form = $(this);
         var actionUrl = form.attr('action');
@@ -24,11 +23,11 @@ $(document).ready(function () {
                 $(".lds-spinner").remove();
 
                 if (data.message) {
-                    $("#sendingForm").after("<h1>" + data.message + "</h1>");
-                    $("#sendingForm").trigger("reset");
+                    $("#sendingForm, #calculateInsurance").after("<h1>" + data.message + "</h1>");
+                    $("#sendingForm, #calculateInsurance").trigger("reset");
                     $(".errorPara").remove();
                 } else {
-                    $("#sendingForm").after("<h1>Received an unexpected response</h1>");
+                    $("#sendingForm, #calculateInsurance").after("<h1>Received an unexpected response</h1>");
                 }
             },
             error: function (jqXHR, textStatus, errorThrown) {
@@ -41,12 +40,12 @@ $(document).ready(function () {
 
                     Object.keys(errors).forEach(function(key) {
                         var message = errors[key];
-                        var inputField = $("input[name='" + key + "'], textarea[name='" + key + "']");
+                        var inputField = $("input[name='" + key + "'], select[name='" + key + "'], textarea[name='" + key + "']");
                         $("<p class='errorPara'>" + message + "</p>").insertAfter(inputField);
                     });
                 } else {
                     var generalErrorMsg = jqXHR.status + ': ' + jqXHR.statusText;
-                    $("#sendingForm").after("<h1>Error - " + generalErrorMsg + "</h1>");
+                    $("#sendingForm, #calculateInsurance").after("<h1>Error - " + generalErrorMsg + "</h1>");
                 }
             }
         });

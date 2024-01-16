@@ -68,9 +68,9 @@
 								<span>Kontakt</span>
 								<h4>Godziny otwarcia</h4>
 								<ul class="time-sidual">
-									<li class="day">Poniedziałek - Piątek <span>8.00-20.00</span></li>
-									<li class="day">Sobota <span>9.00-20.00</span></li>
-									<li class="day">Niedziela <span>9.00-15.00</span></li>
+									<li class="day">Poniedziałek - Piątek <span>8.00-22.00</span></li>
+									<li class="day">Sobota <span>8.00-22.00</span></li>
+									<li class="day">Niedziela <span>8.00-22.00</span></li>
 								</ul>
 							</div>
 						</div>

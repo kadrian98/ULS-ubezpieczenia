@@ -3,17 +3,43 @@
 class ContactFormValidator {
     private $errors = [];
     
-    public function validate($name, $email, $tel, $message, $privacyPolicyAccepted) {
+    public function validate($value) {
         
         $this->errors = [];
-        
-        
-       
-        $this->validateName($name);
-        $this->validateEmail($email);
-        $this->validatePhoneNumber($tel);
-        $this->validateMessage($message);
-        $this->checkBoxStatus($privacyPolicyAccepted);
+
+        $args = func_get_args();
+        $num_args = func_num_args();
+    
+        for ($i = 0; $i < $num_args; $i++) {
+            $value = $args[$i];
+            switch ($i) {
+                case 0:
+                    $this->validateName($value);
+                    break;
+                case 1:
+                    $this->validateEmail($value);
+                    break;
+                case 2:
+                    $this->validatePhoneNumber($value);
+                    break;
+                case 3:
+                    if ($num_args == 5) {
+                        $this->validateMessage($value);
+                    } else {
+                        $this->checkBoxStatus($value);
+                    }
+                    break;
+                case 4:
+                    $this->checkBoxStatus($value);
+                    break;
+            }
+        }
+
+        // $this->validateName($name);
+        // $this->validateEmail($email);
+        // $this->validatePhoneNumber($tel);
+        // $this->validateMessage($message);
+        // $this->checkBoxStatus($privacyPolicyAccepted);
         
         $this->sendErrorToArray();
     
@@ -51,7 +77,6 @@ class ContactFormValidator {
 
     private function checkBoxStatus($privacyPolicyAccepted){
         if (!$privacyPolicyAccepted) {
-            // 'value' to wartość, którą oczekujesz, że checkbox będzie miał, jeśli jest zaznaczony
             $this->errors['privacy-policy'] = "Zaznacz zgodę na przetwarzanie danych!";
         }else{  
             return;
