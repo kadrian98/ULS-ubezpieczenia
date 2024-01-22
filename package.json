@@ -1,0 +1,15 @@
+{
+  "name": "uls",
+  "version": "1.0.0",
+  "description": "cloudflare ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "wrangler publish src/index.mjs",
+		"dev": "wrangler dev src/index.mjs --local"
+  },
+  "devDependencies": {
+		"wrangler": "^2.0.0"
+	},
+  "author": "Adrian Kaczmarek",
+  "license": "ISC"
+}

@@ -40,8 +40,7 @@ function uls_style() {
   wp_enqueue_script('jq', 'https://code.jquery.com/jquery-3.7.1.js', array(), false, true);
   wp_enqueue_script( 'ajax', get_stylesheet_directory_uri() . '/js/ajaxForm.js', array(), false, false );
   wp_enqueue_script( 'toggle-menu', get_stylesheet_directory_uri() . '/js/toggle-menu.js', array(), false, false );
-  
-  
+  wp_enqueue_script('cloudflare', 'https://challenges.cloudflare.com/turnstile/v0/api.js', array(), false, false);
   }
   
 add_action('wp_enqueue_scripts','uls_style');

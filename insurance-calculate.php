@@ -107,6 +107,7 @@ get_header();
 										<input type="text" name="youngestOwnerAge" placeholder="np. 23">
 									</div>
 								</div>
+								<div style="margin:1rem 0;" class="cf-turnstile" data-sitekey="0x4AAAAAAAQcAeQq7u7TQa1Z" data-callback="javascriptCallback"></div>
 								<input type="hidden" name="formType" value="insuranceForm">
 								<div class="col-12 checkboxForm">
 									<input id="myCheckbox" type="checkbox" class="checkbox" name="privacy-policy" />

@@ -65,7 +65,6 @@ class Mailer {
         $body = "<strong>Imię i nazwisko:</strong> $name<br>"
         . "<strong>Email:</strong> $email<br>"
         . "<strong>Telefon:</strong> $tel<br>"
-        // Tutaj dodaj pozostałe pola
         . "<strong>Numer rejestracyjny:</strong> $plate<br>"
         . "<strong>Marka i model:</strong> $model<br>"
         . "<strong>Rok produkcji:</strong> $year<br>"

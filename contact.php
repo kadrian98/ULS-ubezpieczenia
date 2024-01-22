@@ -48,6 +48,7 @@ get_header();
 									<div class="col-6 m-auto form-group login-btn">
 										<button class="btn" type="submit">Wyślij!</button>
 									</div>
+									<div style="margin:1rem 0;" class="cf-turnstile" data-sitekey="0x4AAAAAAAQcAeQq7u7TQa1Z" data-callback="javascriptCallback"></div>
 									<div class="col-12 checkboxForm">
 										<input id="myCheckbox" type="checkbox" class="checkbox" name="privacy-policy" />
 										<p>Wyrażam zgodę na przetwarzanie danych osobowych zawartych we wnioskach o zawarcie umowy ubezpieczenia, polisach ubezpieczeniowych oraz dokumentach niezbędnych do zawarcia umowy ubezpieczenia przez ELS Elżbieta Kania z siedzibą w Szczecinie (w dalszej treści zwanej Agencją) w celach:<a style="color:blue;" href="<?php echo site_url('/przetwarzanie-danych'); ?>"> Czytaj dalej...</a></p>
